@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="../static-js/time.js"></script>
+    <title>PS TIMER</title>
+
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">Ps timer</h1>
+      <nav>
+        <% if(!name){ %>
+        <a href="login.html">로그인</a>
+        <a style="color: white;">|</a>
+        <a href="register.html">회원가입</a>
+        <% } else{ %>
+        <a><%= name%></a>
+        <a href="/logout">로그아웃</a>
+        <a style="color: white;">|</a>
+        <a href="/gomy">마이페이지</a>
+        <a style="color: white;">|</a>
+        <a href="/timer">타이머</a>
+        <a style="color: white;">|</a>
+        <a href="/ranking">랭킹</a>
+        <% } %>
+      </nav>
+    </header>
+    <main class="main">
+      <div>
+        <div class="img">
+          <div class="content">
+            <h2>Don't give up!</h2>
+          </div>
+          <div class="img-cover"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

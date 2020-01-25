@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ranking</title>
+    <script src="../static-js/ranking.js"></script>
+    <link rel="stylesheet" href="../css/ranking.css" />
+    <% list = JSON.parse(list);var list_length = Object.keys(list).length%>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo"><a href="/main">Ps timer</a></h1>
+      <nav>
+        <a href="/gomy">마이페이지</a>
+        <a style="color: white;">|</a>
+        <a href="/timer">타이머</a>
+      </nav>
+    </header>
+    <main class="main">
+      <button onclick = "change_ranking('overall_ranking')" id = "overall_ranking" class = "ranking_page" style = "border-bottom : 2px solid white; background-color : white">전체 랭킹</button>
+      <button onclick = "change_ranking('grade_ranking')" id = "grade_ranking" class = "ranking_page" style = "border-bottom : 2px solid balck; background-color: lightgray;">학년 랭킹</button>
+      <button onclick = "change_ranking('class_ranking')" id = "class_ranking" class = "ranking_page" style = "border-bottom : 2px solid balck; background-color: lightgray;">반 랭킹</button>
+      <div id = "border">
+        <p id = "ranking_border">전체 랭킹</p>
+        <table class = "table table-striped">
+        <thead><th>순위</th><th>아이디</th><th>시간</th></thead>
+        <tbody id = "rank_table">
+          <%var hour=0, min=0, sec=0;%>
+          <% for(var i=list_length;i>=1;i--){%>
+            <%var time = list[Object.keys(list)[list_length-i]]%>
+            <%  hour = parseInt(time / 3600); min = parseInt(parseInt(time%3600) / 60); sec = parseInt(time%3600) % 60; %>
+        <tr class = "rank" id=""> </tr><td><%= list_length-i+1 %>등</td><td id = "name"><%=Object.keys(list)[list_length-i]%></td><td id = "time_1"> <%=hour%>시간<%=min%>분<%=sec%>초</td></tr>
+          <% }%>
+        </tbody>
+        </table>
+      </div>
+      <br>
+      <br>
+    </main>
+  </body>
+</html>
