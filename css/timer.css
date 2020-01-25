@@ -1,0 +1,176 @@
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    position: relative;
+    background-image: url(../jpg/desk2.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    padding: 1rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.0);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 50px;
+}
+
+h3,
+h4 {
+    margin: 0px;
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 35px;
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    margin-top: 72px;
+    display: flex;
+    width: 90%;
+    height: 60vh;
+    background-color: rgba(255,255,255,0.9);
+    border-top: black solid 3px;
+}
+
+.left {
+    flex: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: rgb(197, 197, 197) solid 1px;
+}
+
+.my {
+    width: 100px;
+    height: 100px;
+}
+
+.center {
+    flex: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: rgb(197, 197, 197) solid 1px;
+}
+
+small {
+    font-size: 18px;
+}
+
+.right {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../jpg/Famous_saying.jpg);
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#study {
+    text-align : center;
+}
+
+#study_select {
+    font-size: 12pt;
+    width: 150px;
+    height: 30px;
+}
+
+#subject_select {
+    font-size: 10pt;
+}
+
+.header {
+    display: flex;
+    width: 70%;
+    height: 10vh;
+    align-items: center;
+}
+
+.totalfont {
+    display: inline;
+    font-size: 100px;
+    font-family: VPSSonLaHoa, sans-serif;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: VPSSonLaHoa;
+    src: url(../css/clockicons.woff2) format("woff2");
+    font-weight: 100;
+    font-style: normal
+}
+
+span{
+    font-size: 200px;
+}
+h1{
+    margin: 0px;
+}
+
+.button{
+    padding : 10px 40px 10px 40px;
+    border : 0px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+}
+
+.but:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.fs{
+    margin: 0;
+}

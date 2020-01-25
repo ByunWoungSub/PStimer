@@ -1,0 +1,157 @@
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    padding: 1rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.0);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+element.style {
+    overflow: hidden;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+main {
+    padding: 1rem;
+    height: 100%;
+    text-align: center;
+}
+
+body {
+    padding-top: 30px;
+    background-image: url(../jpg/computer.jpg);
+}
+
+thead {
+    display : table-header-group;
+    vertical-align: middle;
+    border-color : inherit;
+}
+
+tbody {
+    display : table-row-group;
+    vertical-align: middle;
+    border-color : inherit;
+}
+
+table {
+    display: table;
+    border-spacing : 0;
+    border-collapse : collapse;
+    background-color : transparent;
+    border-color: grey;
+}
+
+tr {
+    display : table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+th {
+    font-weight : 600;
+    text-align : left;
+    padding-left : 25px;
+    border-top : 0;
+    vertical-align: bottom;
+    border-bottom : 2px solid #ddd;
+    padding : 8px;
+    line-height : 1.42857143;
+}
+
+td {
+    display : table-cell;
+    padding-left : 25px;
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#border {
+    padding : 10px;
+    border: 2px solid black;
+    background-color: white;
+    text-align : left;
+    z-index : 2;
+}
+
+#ranking_border {
+    text-align : center;
+    font-weight : bold;
+    font-size : 36pt;
+    margin-bottom : 30px;
+}
+
+.ranking_page {
+    position : relative;
+    text-align : center;
+    right : 180px;
+    height : 30px;
+    width : 100px;
+    border : 2px solid black;
+    margin-bottom : -2px;
+    background-color: lightgray;
+    border-radius: 10px 10px 0px 0px;
+    z-index : 1;
+    outline:none;
+}
+
+.table {
+    width : 100%;
+    max-width : 100%;
+    margin-bottom : 20px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.logo {
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+
+header{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.main {
+    margin: 70px 0px 70px 0px;
+    height: 100vh;
+    width: 100%;
+}

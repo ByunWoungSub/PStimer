@@ -1,0 +1,95 @@
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    padding: 1rem;
+    color: black;
+    background: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+main {
+    padding: 1rem;
+    height: 100%;
+    text-align: center;
+}
+
+body {
+    padding-top: 75px;
+    background: whitesmoke;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    color: #204996;
+}
+
+.main{
+    margin: 50px 50px 50px 50px;
+}
+
+.img {
+    position: relative;
+    background-image: url(../night.jpg);
+    height: 84vh;
+    background-size: cover;
+}
+
+.img-cover {
+    position: absolute;
+    height: 30px;
+    width: 110px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.img .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+.total{
+    background-color: white;
+    height: 500px;
+    width: 500px;
+}
+.totalfont{
+    display:inline;
+    font-size: 40px;
+}
+.blank{
+    height: 125px;
+}

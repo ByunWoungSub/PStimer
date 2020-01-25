@@ -1,0 +1,77 @@
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.img {
+    position: relative;
+    background-image: url(../jpg/desk.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.img-cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.img .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    padding: 1rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.0);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 50px;
+}
+
+h3, h4{
+    margin: 0px;
+    text-shadow: 0 0 25px rgba(0,0,0,0.3);
+}
+
+p{
+    font-size: 35px;
+    text-shadow: 0 0 25px rgba(0,0,0,0.5);
+}

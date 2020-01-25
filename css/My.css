@@ -1,0 +1,217 @@
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    padding: 1rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.0);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    display: flex;
+    align-items: center;
+    flex-direction: column;     
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    background: whitesmoke;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 30px;
+    padding-top: 1%;
+    font-weight: bold;
+}
+
+li {
+    font-size: 20px;
+}
+
+.logo {
+    color: white;
+    font-family: sans-serif;
+}
+
+.inner{
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    max-width: 1000px;
+}
+
+.profile-img{
+    display: block;
+    width: 160px;
+    height: 160px;
+    background: url(../jpg/my.png);
+    background-size: cover;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.content {
+    display: flex;
+    width: 70%;
+    height: 30vh;
+    background-color: rgba(255,255,255,0.85);
+    border-top: black solid 3px;
+}
+
+.left {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: rgb(197, 197, 197) solid 1px; 
+}
+
+.my {
+    width: 100px;
+    height: 100px;
+}
+
+.center{
+    padding-left: 20px;
+    flex: 2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: rgb(197, 197, 197) solid 1px;
+}
+
+small {
+    font-size: 18px;
+}
+
+.right {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: rgb(197, 197, 197) solid 1px;
+}
+
+.information {
+    display: flex;
+    width: 70%;
+    height: 30vh;
+}
+
+.study{
+    margin-top: 15px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.ileft {
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: center;
+    border: rgb(197, 197, 197) solid 1px; 
+    border-top: black solid 3px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.iright {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.menu{
+    display: inline;
+}
+
+.header{
+    margin-top: 60px;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+body {
+    position: relative;
+    background-image: url(../jpg/loginback2.jpg);
+    height: 100vh;
+    background-size: cover;
+    overflow:hidden;
+}
+
+.logo {
+    font-size: 50px;
+}
+
+button{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: auto;
+    width: 200px;
+    height: 50px;
+    border : 0px;
+    background-color: black;
+    width: 70%;
+    color: white;
+    margin-bottom: 25%;
+}
+
+.pwch{
+    margin-top: 50px;
+}
+
+.but:hover {
+    background-color: rgb(24, 24, 24);
+}
