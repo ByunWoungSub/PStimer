@@ -1,0 +1,39 @@
+<!-- <script language="javascript">
+  function showPopup(){window.open("resetpw.html", "a", "width=800, height=600, left=100, top=50");}
+</script>
+<input type="button" value="비밀번호 재설정" onclick="showPopup();"/> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>비밀번호 재설정</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&display=swap&subset=korean" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Ps timer</h1>
+      </header>
+        <div id = "register_form">
+        <p class = "register">비밀번호 재설정</p>
+        <form action = "/resetpw">
+        <div class = "container">
+          <label class = "index">새 비밀번호 (Password)</label>
+          <div class = "textBox" id = "form_group">
+          <input class = "index_textBox" id = "newpw" name = "newpw" type = "password" placeholder="Enter your Password">
+          </div>
+  
+          <label class = "index">비밀번호 재입력 (Return Password)</label>
+          <div class = "textBox" id = "form_group">
+          <input class = "index_textBox" id = "return_newpw" name = "return_newpw" type = "password" placeholder="Enter your Password">
+          </div>
+  
+          <div class = "submit" id = "form_group">
+            <input type="submit" value="완료">
+        </div>
+        </form>
+        </div>
+</body>
+</html>

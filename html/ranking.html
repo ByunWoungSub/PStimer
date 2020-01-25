@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PS TIMER</title>
+    <script src="../static-js/ranking.js"></script>
+    <link rel="stylesheet" href="../css/ranking.css" />
+  </head>
+  <body onload = "change_ranking_table('overall_ranking');">
+    <header>
+      <h1 class="logo">Ps timer</h1>
+      <nav>
+        <a href="my.html">마이페이지</a>
+        <a style="color: white;">|</a>
+        <a href="timer.html">타이머</a>
+        <a style="color: white;">|</a>
+        <a href="ranking.html">랭킹</a>
+      </nav>
+    </header>
+    <main class="main">
+      <button onclick = "change_ranking('overall_ranking')" id = "overall_ranking" class = "ranking_page" style = "border-bottom : 2px solid white; background-color : white">전체 랭킹</button>
+      <button onclick = "change_ranking('grade_ranking')" id = "grade_ranking" class = "ranking_page" style = "border-bottom : 2px solid balck; background-color: lightgray;">학년 랭킹</button>
+      <button onclick = "change_ranking('class_ranking')" id = "class_ranking" class = "ranking_page" style = "border-bottom : 2px solid balck; background-color: lightgray;">반 랭킹</button>
+      <div id = "border">
+        <p id = "ranking_border">OVERALL RANKING</p>
+        <table class = "table table-striped">
+        <thead><th>순위</th><th>아이디</th><th>시간</th></thead>
+        <tbody id = "rank_table">
+        </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

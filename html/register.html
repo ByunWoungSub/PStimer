@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PS TIMER</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&display=swap&subset=korean" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1 class="logo"><a href="/main">Ps timer</a></h1>
+    </header>
+      <div id = "register_form">
+      <p class = "register">회원가입</p>
+      <form action = "/join">
+      <div class = "container">
+        <label class = "index">이름 (Name)</label>
+        <div class = "textBox" id = "form_group">
+        <input class = "index_textBox" id = "name" name = "name" type = "text" placeholder="Enter your Name">
+        </div>
+
+        <label class = "index">이메일 (E-mail)</label>
+        <div class = "textBox" id = "form_group">
+        <input class = "index_textBox" id = "Email" name = "Email" type = "text" placeholder="Enter your E-mail">
+        </div>
+
+        <label class = "index">학번 (숫자 형식으로 입력해주시기바랍니다. 예) 1학년 1반 1번 = 1101) </label>
+        <div class = "textBox" id = "form_group">
+        <input class = "index_textBox" id = "group" name = "group" type = "text" placeholder="Enter your Group">
+        </div>
+
+        <label class = "index">아이디 (ID)</label>
+        <div class = "textBox" id = "form_group">
+        <input class = "index_textBox" id = "id" name = "id" type = "text" placeholder="Enter your ID">
+        </div>
+
+        <label class = "index">비밀번호 (Password)</label>
+        <div class = "textBox" id = "form_group">
+        <input class = "index_textBox" id = "pw" name = "pw" type = "password" placeholder="Enter your Password">
+        </div>
+
+        <label class = "index">비밀번호 재입력 (Return Password)</label>
+        <div class = "textBox" id = "form_group">
+        <input class = "index_textBox" id = "return_pw" name = "return_pw" type = "password" placeholder="Enter your Password">
+        </div>
+        <label class = "index">개인확인 질문 - 가장 좋아하는 영화는?</label>
+        <div class = "textBox" id = "form_group">
+        <input class = "index_textBox" id = "que" name = "question" type = "question" placeholder="Enter your answer">
+        </div>
+
+        <div class = "submit" id = "form_group">
+        <button>회원가입</button>
+      </div>
+      </form>
+      </div>
+  </body>
+</html>

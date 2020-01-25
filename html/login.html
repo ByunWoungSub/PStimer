@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script lang="javascript">
+      function showPopup(){
+        window.open("findpw.html","findpassword", "width=800, height=650, left=100, top=50");
+      }
+    </script>
+    <title>login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&display=swap&subset=korean" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1 class="logo"><a href="/main">Ps timer</a></h1>
+    </header>
+    <main>
+      <table>
+        <tr>
+          <td>
+            <img src="../jpg/loginimg.jpg" alt="" />
+          </td>
+          <td style="width: 400px;">
+            <h1 >Ps timer</h1>
+            <br>
+            <form action="/login" >
+              <div class="textBox" id="form_group">
+                <input
+                  class="index_textBox"
+                  id="id"
+                  name="id"
+                  type="text"
+                  placeholder="아이디"
+                />
+              </div>
+              <div class="textBox" id="form_group">
+                <input
+                  class="index_textBox"
+                  id="pw"
+                  name="pw"
+                  type="password"
+                  placeholder="비밀번호"
+                />
+              </div>
+              <br>
+              <input id="submit" type="submit" value="로그인" />
+            </form>
+            <form action="/">
+              <div class="submit">
+                <button id="submit" onclick="showPopup()">비밀번호 재설정</button>
+              </div>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </main>
+  </body>
+</html>
